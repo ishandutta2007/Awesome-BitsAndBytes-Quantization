@@ -9,8 +9,9 @@
 
 The technical progression of the BitsAndBytes library reflects a steady trajectory away from rigid integer rounding to outlier-isolated tensor splitting and highly specialized non-uniform data types.
 
+```
 [LLM.int8() (Dettmers et al., 2022)] ----> [4-bit NormalFloat (QLoRA, 2023)] ----> [Modern Fused Low-Precision FP4/FP2 (2025+)](Vector-Wise Outlier Separation)             (Non-Uniform Quantization / NF4)             (Native Sub-4-Bit Tensor Core Scaling)
-
+```
 
 
 *   **The Vector-Wise Outlier Separation Era (LLM.int8(), 2022)**
@@ -73,4 +74,3 @@ Deploying and scaling BitsAndBytes configurations across scalable production nod
 *   **Edge Device Decentralized Intelligence (Local LLM Serving)**
     *   *Application:* Running advanced reasoning profiles locally on enterprise hardware or mobile nodes. BitsAndBytes compression drops model memory boundaries down into shared unified system RAM lines, permitting continuous chat generation without relying on external cloud APIs or data networks.
 
-    
