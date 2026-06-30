@@ -1,11 +1,15 @@
-# Awesome-BitsAndBytes-Quantization
-## BitsAndBytes Quantization: Evolution, Variants, Types, & Applications
+<div align="center">
+  <img src="assets/banner.svg" alt="Awesome BitsAndBytes Quantization Banner" width="100%" />
+</div>
+
+# 🚀 Awesome BitsAndBytes Quantization 🧠
+## 📉 BitsAndBytes Quantization: Evolution, Variants, Types, & Applications
 
 **BitsAndBytes Quantization** is an industry-standard, hardware-aware model compression framework designed to accelerate the training and deployment of deep learning architectures, particularly Large Language Models (LLMs) [1]. Developed by Tim Dettmers, the library introduces custom low-level CUDA kernels that compress standard high-precision floating-point weights (like FP32 or BF16) into dynamic 8-bit or 4-bit representations. Unlike traditional quantization methods that frequently corrupt model reasoning due to systemic parameters outliers, BitsAndBytes isolates these fragile channels, permitting developers to load massive models on consumer-grade hardware or execute parameter-efficient fine-tuning (PEFT) with absolute zero performance degradation.
 
 ---
 
-## 1. The Chronological Evolution
+## 1. ⏳ The Chronological Evolution
 
 The technical progression of the BitsAndBytes library reflects a steady trajectory away from rigid integer rounding to outlier-isolated tensor splitting and highly specialized non-uniform data types.
 
@@ -24,7 +28,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Data-Type Variants
+## 2. 🎛️ Core Functional & Data-Type Variants
 
 The BitsAndBytes ecosystem is organized around specialized low-bit data types designed to balance model weight density with mathematical representational fidelity.
 
@@ -36,7 +40,7 @@ The BitsAndBytes ecosystem is organized around specialized low-bit data types de
 
 ---
 
-## 3. System-Level Hardware & Optimization Classes
+## 3. ⚙️ System-Level Hardware & Optimization Classes
 
 Depending on the operational constraints of the ML infrastructure, BitsAndBytes injects specialized system layers to protect gradient updates and manage physical VRAM ceilings.
 
@@ -47,7 +51,7 @@ Depending on the operational constraints of the ML infrastructure, BitsAndBytes 
 
 ---
 
-## 4. Production Engineering Challenges & Mitigations
+## 4. ⚠️ Production Engineering Challenges & Mitigations
 
 Deploying and scaling BitsAndBytes configurations across scalable production nodes introduces unique latency and software integration constraints.
 
@@ -58,7 +62,7 @@ Deploying and scaling BitsAndBytes configurations across scalable production nod
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 5. 🔮 Frontier Real-World AI Applications
 
 | Application | Description | Year | First Used Paper |
 | :--- | :--- | :--- | :--- |
