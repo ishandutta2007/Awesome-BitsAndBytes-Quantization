@@ -80,3 +80,14 @@ Deploying and scaling BitsAndBytes configurations across scalable production nod
 | [**Multi-Tenant SaaS Foundation Serving Hubs**](details/saas_serving.md) | Optimizes cloud serving frameworks. Inference servers store massive foundation networks compressed via BitsAndBytes 4-bit hooks to fit multiple model instances inside a single physical VRAM cluster, dynamically swapping tiny, specialized downstream adapter weights to route multi-user traffic cheaply. | 2023 | [Punica: Multi-Tenant LoRA Serving](https://arxiv.org/abs/2310.18547) |
 | [**Edge Device Decentralized Intelligence (Local LLM Serving)**](details/edge_serving.md) | Running advanced reasoning profiles locally on enterprise hardware or mobile nodes. BitsAndBytes compression drops model memory boundaries down into shared unified system RAM lines, permitting continuous chat generation without relying on external cloud APIs or data networks. | 2022 | [LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale](https://arxiv.org/abs/2208.07339) |
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-BitsAndBytes-Quantization&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-BitsAndBytes-Quantization&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-BitsAndBytes-Quantization&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-BitsAndBytes-Quantization&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
