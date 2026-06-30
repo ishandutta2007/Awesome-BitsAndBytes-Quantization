@@ -9,7 +9,7 @@
 
 The technical progression of the BitsAndBytes library reflects a steady trajectory away from rigid integer rounding to outlier-isolated tensor splitting and highly specialized non-uniform data types.
 
-```
+```mermaid
 [LLM.int8() (Dettmers et al., 2022)] ----> [4-bit NormalFloat (QLoRA, 2023)] ----> [Modern Fused Low-Precision FP4/FP2 (2025+)](Vector-Wise Outlier Separation)             (Non-Uniform Quantization / NF4)             (Native Sub-4-Bit Tensor Core Scaling)
 ```
 
