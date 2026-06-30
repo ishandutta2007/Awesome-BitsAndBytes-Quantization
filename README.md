@@ -10,9 +10,11 @@
 The technical progression of the BitsAndBytes library reflects a steady trajectory away from rigid integer rounding to outlier-isolated tensor splitting and highly specialized non-uniform data types.
 
 ```mermaid
-[LLM.int8() (Dettmers et al., 2022)] ----> [4-bit NormalFloat (QLoRA, 2023)] ----> [Modern Fused Low-Precision FP4/FP2 (2025+)](Vector-Wise Outlier Separation)             (Non-Uniform Quantization / NF4)             (Native Sub-4-Bit Tensor Core Scaling)
+flowchart LR
+    A["LLM.int8() (Dettmers et al., 2022)<br/>(Vector-Wise Outlier Separation)"]
+    --> B["4-bit NormalFloat (QLoRA, 2023)<br/>(Non-Uniform Quantization / NF4)"]
+    --> C["Modern Fused Low-Precision FP4/FP2 (2025+)<br/>(Native Sub-4-Bit Tensor Core Scaling)"]
 ```
-
 
 *   **The Vector-Wise Outlier Separation Era (LLM.int8(), 2022)**
     *   *Concept:* The core foundational breakthrough. Dettmers et al. discovered that transformer layers contain a small set of dominant, high-magnitude activation channels (outliers) that absorb massive amounts of semantic weight. Standard 8-bit quantization ruined models because it clipped these outliers. `LLM.int8()` solved this by splitting the matrix multiplication: 99.9% of normal features are quantized to 8-bit integers, while the 0.1% outlier vectors are held in raw, high-precision FP16. 
