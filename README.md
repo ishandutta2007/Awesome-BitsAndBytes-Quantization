@@ -2,7 +2,17 @@
   <img src="assets/banner.svg" alt="Awesome BitsAndBytes Quantization Banner" width="100%" />
 </div>
 
+<meta name="description" content="A curated resource list and guide on BitsAndBytes quantization, covering NF4, FP4, LLM.int8(), paged optimizers, and local fine-tuning methodologies." />
+<meta name="keywords" content="BitsAndBytes, Quantization, QLoRA, LLM, deep learning, PyTorch, model compression, NF4, FP4, LLM.int8()" />
+
 # 🚀 Awesome BitsAndBytes Quantization 🧠
+
+<div align="center">
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+
+</div>
+
 ## 📉 BitsAndBytes Quantization: Evolution, Variants, Types, & Applications
 
 **BitsAndBytes Quantization** is an industry-standard, hardware-aware model compression framework designed to accelerate the training and deployment of deep learning architectures, particularly Large Language Models (LLMs) [1]. Developed by Tim Dettmers, the library introduces custom low-level CUDA kernels that compress standard high-precision floating-point weights (like FP32 or BF16) into dynamic 8-bit or 4-bit representations. Unlike traditional quantization methods that frequently corrupt model reasoning due to systemic parameters outliers, BitsAndBytes isolates these fragile channels, permitting developers to load massive models on consumer-grade hardware or execute parameter-efficient fine-tuning (PEFT) with absolute zero performance degradation.
